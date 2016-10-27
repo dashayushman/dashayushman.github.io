@@ -1,23 +1,23 @@
 # Welcome to Jekyll!
 
 # Website settings
-title: "Jalpc"
-description: "Jack's blog,use Jekyll and github pages."
-keywords: "Jack,Jalpc,blog,Jekyll,github,gh-pages"
+title: "Dash"
+description: "Ayushman Dash's blog."
+keywords: "dash,blog,Jekyll,github,gh-pages,personal"
 baseurl: "/"
-url: "http://www.jack003.com"
+url: "http://github-username.github.io"
 # url: "http://127.0.0.1:4000"
 
 # author
 author:
-  name: 'Jack'
-  first_name: 'Jia'
-  last_name: 'Kun'
-  email: 'me@jack003.com'
-  facebook_username: 'jiakunnj'
-  github_username: 'Jack614'
-  head_img: 'static/img/landing/Jack.jpg'
-  desc: 'I am a Full Stack engineer with website development, automation Ops and writing scripts experience. Life is a continuous learning process, so work makes me more rigorous, travel makes my life more colorful. I can make lots of friends when I coding and travel.'
+  name: 'Ayushman Dash'
+  first_name: 'Ayushman'
+  last_name: 'Dash'
+  email: 'dash.ayushman.99@gmail.com'
+  facebook_username: 'ayushmanmaku'
+  github_username: 'dashayushman'
+  head_img: 'static/img/landing/dash.jpg'
+  desc: 'I am machine learning engineer with experience in toolkits like scikit-learn, Tensorflow, Keras. I began my career as a full stack web developer and I still enjoy designing User Interfaces. Python, java, node.js, mongoDb and express are my preferred programming langiuages, frameworks and database engines and I have experience in MySQL and java too. I am an extremely fast learner, hard worker and a self-motivated independent developer. I believe that with hard work and sincerity anything can be achieved. I have an affinity towards Artificial Intelligence, Machine Learning, Deep Neural Networks, Information Retrieval, Data Mining and I aim at contributing as much as I can to these fields.'
 
 # sections
 sections:
@@ -61,24 +61,24 @@ sections:
 languages:
   - locale: 'en'
     flag: 'static/img/flags/United-States.png'
-  - locale: 'zh'
-    flag: 'static/img/flags/China.png'
+  #- locale: 'zh'
+    #flag: 'static/img/flags/China.png'
 
 # blog img path
-img_path: 'http://www.jack003.com/static/img/blog'
+img_path: 'https://dashayushman.github.io/static/img/blog'
 
 # donate
 donate:
-  wechat: 'static/img/pay/wechat.png'
-  alipay: 'static/img/pay/alipay.png'
+  #wechat: 'static/img/pay/wechat.png'
+  #alipay: 'static/img/pay/alipay.png'
 
 # comment
 changyan:
   # appid: cysfY7ULn
   # conf: prod_861928934cecb7a18e15bedaed9dae29
 disqus:
-  name: jalpc
-  public_key: tj2MPaNlHMONwTH5bGDNSXyaBpW7q282MeUzh5CwcjJerNhK8Kxk3aWo7IckzTX7
+  name: dash-blog
+  public_key: UDu5POnJPbqKA6ixydW182oSweXgF4HtnhySTxuxGGanwldHpCKshKuO5TAKObRZ
 
 # share
 bshare:
@@ -90,11 +90,11 @@ ba:
 
 # google analytics
 ga:
-  id: UA-73784599-1
+  id: UA-86445551-1
 
 # growingIO
 gio:
-  id: a49d4901c7853da9
+  #id: a49d4901c7853da9
 
 # Build settings
 encoding: "utf-8"
