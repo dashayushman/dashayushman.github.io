@@ -1,23 +1,23 @@
-- name: 'Saplatform'
-  i18n: 'saplatform'
-  url: '/Jack614/saplatform'
-  img: 'static/img/landing/saplatform.png'
-  desc: 'Saplatform is a automated service for operations, it has asset management, project release, database access function, it can control mass servers.'
+- name: 'Deep-Trans'
+  i18n: 'deeptrans'
+  url: '/dashayushman/deep-trans'
+  img: 'static/img/landing/deeptrans.png'
+  desc: 'Deep-Trans is a open-source project that I developed in collaboration with my ex-colleague Bhupen Chauhan. Considering the long temporal dependency of text in Indian languages and languages in general and with the domain Knowledge that we had from our past experiences, we extended our idea by creating a transliteration engine for English to Hindi phonetic conversion using an LSTM sequence to sequence model.'
 
-- name: 'Jalpc'
-  i18n: 'jalpc'
-  url: '/Jack614/jalpc_jekyll_theme'
-  img: 'static/img/landing/jekyll.png'
-  desc: "Jalpc is a simple, beautiful and swift theme for Jekyll. It has comprehensive function, it can be easily used and edited. It's adapted for many kinds devices."
+- name: 'Pewter'
+  i18n: 'pewter'
+  url: '/sigvoiced/pewter'
+  img: 'static/img/landing/pewter.png'
+  desc: "Pewter is an open-source project for data acquisition, analysis, visualization of raw data from Myo and conduct experiments on it. You can create experiments and visualize the data for doing some analysis before pre-processing and feature extraction. Pewter was originally developed by me for data acquisition and analysis of raw data from Myo Armband for one of my other projects, Voice."
 
-- name: 'Jalpc-A'
-  i18n: 'angularjs'
-  url: '/Jack614/Jalpc-A'
-  img: 'static/img/landing/angularjs.png'
-  desc: "It is a web font application written by Angularjs and deployed by Jekyll on github (gh-pages), the backend platform is Leancloud, you can use Parse as well."
+- name: 'LSTM.transpose()'
+  i18n: 'tlstm'
+  url: '/vaulttech/lstmJam'
+  img: 'static/img/landing/tlstm.png'
+  desc: "LSTM.transpose() is an experiment with an unfolded version of LSTMs. The hypothesis is that The gradients of a deep Neural Network following the same architecture of the LSTM unfolded through time (even those of the bottom layers) are efficiently trainable with Backpropagation, and won't be affected by the 'vanishing gradient' problem. This is the case even when the weights are not 'tied'."
 
-- name: 'Rsser'
-  i18n: 'rsser'
-  url: '/Jack614/Rsser'
-  img: 'static/img/landing/rsser.png'
-  desc: Rsser is an Ionic application, with this application we can read news and articles freely, you can add rss address from the given list and add it manually.
+- name: 'Voice (Under Development)'
+  i18n: 'voice'
+  url: '/sigvoiced/Voice'
+  img: 'static/img/landing/voice.png'
+  desc: With an idea of using state of the art embodied sensors to track hand gestures and classify signs in Indian Sign language and convert that to speech, I am developing this open-source project using MYO-armband, Deep LSTMs with Connectionist Temporal Classifiers. This project is meant to be a starting point for anyone who is interested in doing further research in the same field or topic.
