@@ -22,38 +22,44 @@ author:
 # sections
 sections:
   - id: 'about-me'
+    nav: '!nav'
     i18n: 'nav.about_me'
     name: 'About'
     tpl: 'about.html'
     css: ''
 
   - id: 'career'
+    nav: '!nav'
     i18n: 'nav.career'
     name: 'Career'
     tpl: 'career.html'
     css: 'timeline'
 
   - id: 'skills'
+    nav: '!nav'
     i18n: 'nav.skills'
     name: 'Skills'
     tpl: 'skills.html'
     css: 'team'
 
   - id: 'projects'
+    nav: '!nav'
     i18n: 'nav.projects'
     name: 'Projects'
     tpl: 'projects.html'
     css: 'project'
 
   - id: 'blog'
+    nav: 'blog'
     i18n: 'nav.blog'
     name: 'Blog'
     tpl: 'blog.html'
     css: 'testimonials navy-section'
 
   - id: 'links'
+    nav: 'nav'
     i18n: 'nav.link'
-    name: 'Links'
+    name: 'Contact'
     tpl: 'links.html'
     css: 'contact'
 
