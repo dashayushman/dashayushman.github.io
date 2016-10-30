@@ -9,17 +9,17 @@ tags: [machine learning,pattern recognition,classification,myo armband,hidden ma
 icon: fa-signing
 ---
 
-# Prerequisites
+# **Prerequisites**
+**[Machine Learning](https://en.wikipedia.org/wiki/Machine_learning) basics:** A basic understanding should be enough.
 
-[Machine Learning](https://en.wikipedia.org/wiki/Machine_learning) basics: A basic understanding should be enough.
-
-# The Pipeline
+# **The Pipeline**
 
 Solving a real world problem using machine learning is not so trivial. If done haphazardly, it may lead to a disaster or waste of a lot of effort. I have seen people directly jumping into choosing a classification algorithm for solving a pattern recognition task and ending up with an accuracy of 20%. Problem solving does not mean selecting an algorithm to solve a problem. It needs proper analysis and understanding  of the problem itself. So, my dear friends, for making sure that you do not end up banging your head on the wall saying "_**I wasted a lot of time for nothing**_" we have **The Pipeline. **This might sound a little boring and is a "**Not So Fun**" part of Machine Learning, but believe me, it is highly necessary for getting better results. Remember the bigger picture that I had talked about? If not then [read this](https://sigvoiced.wordpress.com/about/).
 
-## Understanding The Problem
+## 1. **Understanding The Problem**
 
-1.  **What kind of problem are you trying to solve?** **:** ask this question to yourself before jumping into anything. The following are a few examples,
+1. **What kind of problem are you trying to solve?:** ask this question to yourself before jumping into anything. The following are a few examples,
+
     *   [Classification Problem](https://en.wikipedia.org/wiki/Statistical_classification) :  Where you want to classify data into different classes.
 
     *   [Regression Problem](https://en.wikipedia.org/wiki/Regression_analysis) : Where you want to predict some results given some observations.
@@ -30,9 +30,10 @@ Solving a real world problem using machine learning is not so trivial. If done h
 
     *   And much more...
 
-2.  **Can the problem be divided? : ** After classifying the problem, determine whether you can divide the problem into subproblems or not. If you can, then do the same for every subproblem too.
+2. **Can the problem be divided? : ** After classifying the problem, determine whether you can divide the problem into subproblems or not. If you can, then do the same for every subproblem too.
 
 3.  **How does the environment look like? :** By environment, I mean the environment of your system. The following are a few questions that you can ask yourself to understand the environment better,
+
     *   Is the data accessible to the system?
 
     *   Is the data that the system gets continuous or discrete?
@@ -54,14 +55,15 @@ For example, If my problem is "**Recognising sign language using [Myo armband](h
 
     *   **Continuous : ** The data is time series, which means that we end up getting a 
     sequence of data samples over time.
+
     *   And **partially observable : ** Not everything is accessible from these sensors 
     like fine finger movements.
 
-## The Process
+## 2. **The Process**
 
 Once you have classified your problem and environment, you can follow a two-step process to obtain the best model for your system.
 
-### Step 1 : Data Visualization and Analysis
+### **Step 1 :** Data Visualization and Analysis
 
 This is just an analysis step that will help in better understanding your data and later will help us in determining which Machine Learning Algorithm you should use.
 
@@ -78,7 +80,9 @@ This is just an analysis step that will help in better understanding your data a
 6.  **Think of algorithms** that can help in getting the desired result given such a data.
 
 _Depending on whether you can have labelled or unlabeled data for training, you can decide whether you would use a supervised or an unsupervised learning algorithm. For more details [read this](http://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/)._ **Continuing the example** of converting sign language to speech, the following are two different visualisations of the time series data that was acquired from the Myo Armband. 
+
 ![Screenshot (46)](https://sigvoiced.files.wordpress.com/2016/07/screenshot-462.png) 
+
 ![Screenshot (45)](https://sigvoiced.files.wordpress.com/2016/07/screenshot-452.png?w=680)
 
 By following Step 1 we could,
@@ -94,16 +98,21 @@ By following Step 1 we could,
 5.  Realise that we could **collect labelled data** by conducting experiments.
 
 6.  Think of **Machine Learning Algorithms** that might work in our case.
+
     *   **HMM** (Hidden Markov Models)
+
     *   **SVM** (Support Vector Machine)
+
     *   **LSTM Networks** (Long Short Term Memory Networks)
 
-### Step 2 : The Machine Learning Pipeline
+### **Step 2 :** The Machine Learning Pipeline
 
 1.  **Data Acquisition :  ** Acquire the training data
 
 2.  **Data Preprocessing : **The following are a few examples of preprocessing,
+
     *   **[Scaling](https://en.wikipedia.org/wiki/Feature_scaling)**: Scaling the data is highly necessary for standardising the model. In the next post, I will explain feature scaling with an example.
+
     *   **Normalisation:** normalising the data by resampling or filtering
 
 3.  **[Feature Extraction](https://en.wikipedia.org/wiki/Feature_extraction) : ** Extract features from the data that represent your data well.
@@ -113,18 +122,24 @@ By following Step 1 we could,
 5.  **Model Generation : ** Use any machine learning algorithm (Supervised or Unsupervised) to generate a model for your system.
 
 6.  **Evaluation : ** Evaluate your model using k-fold-cross-validation (There are many other but this works the best for me. So, keep experimenting) and a few standard evaluation metrics like,
+
     *   Precision
+
     *   Recall
+
     *   Contingency Matrix
+
     *   Anova
+
     *   ROC
+
     *   F-Measure
 
-I will continue our example of_**converting sign language to speech**_ for step-1 and 2 in my upcoming posts. Do not get overwhelmed by the terms that you have read above. I will cover everything in step 1 and 2 in detail one by one.
+I will continue our example of **converting sign language to speech** for step-1 and 2 in my upcoming posts. Do not get overwhelmed by the terms that you have read above. I will cover everything in step 1 and 2 in detail one by one.
 
 # Why are we doing all this?
 
-The answer is pretty simple. To assure that we have a highly optimal model at the end for solving our initial problem.
+The answer is pretty simple. To assure that we have a highly optimal model at the end for solving our problem.
 
 # Why the Sign Language To Speech example
 
