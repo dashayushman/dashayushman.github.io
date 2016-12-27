@@ -21,3 +21,15 @@
   url: '/sigvoiced/Voice'
   img: 'static/img/landing/voice.png'
   desc: With an idea of using state of the art embodied sensors to track hand gestures and classify signs in Indian Sign language and convert that to speech, I am developing this open-source project using MYO-armband, Deep LSTMs with Connectionist Temporal Classifiers. This project is meant to be a starting point for anyone who is interested in doing further research in the same field or topic.
+
+- name: 'Air-Script'
+  i18n: 'Air-Script'
+  url: '/dashayushman/air-script'
+  img: 'static/img/landing/air-script.png'
+  desc: Air-Script is a CNN + Sequence to Sequence model for detecting handwriting on air using a Myo-Armband. It is Inspired by ‘Recursive Recurrent Nets with Attention Modeling for OCR in the Wild’ by Chen-Yu & Simon, 2016. The idea was to use 1D-CNNs as feature extractors and a sequence to sequence model with Attention mechanism introduced by Bahdanau et al., 2014 using LSTMs for variable length sequence classification.
+
+- name: 'Autodoc'
+  i18n: 'Autodoc'
+  url: '/vaulttech/autodoc'
+  img: 'static/img/landing/autodoc.png'
+  desc: Can an Autoencoder trained on images of documents generate useful features for classification of a very small dataset? We believe it can. This project is a proof that it does.
