@@ -32,4 +32,4 @@
   i18n: 'Autodoc'
   url: '/vaulttech/autodoc'
   img: 'static/img/landing/autodoc.png'
-  desc: Can an Autoencoder trained on images of documents generate useful features for classification of a very small dataset? We believe it can. This project is a proof that it does.
+  desc: A project for pretraining a Convolutional Autoencoder and then using the encoder weights to retraining another Convolutional Neural network as a transfer learning mechanism. It is being evaluated with the Tobacco dataset for documents.
