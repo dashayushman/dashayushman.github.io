@@ -1,4 +1,20 @@
 - name:
+    detail: Insiders Technologies GmbH
+    i18n: insiders
+  desc:
+    detail: I work in the Natural Language Understanding team and I am involved in developing a Deep Question Answering model for real-world business use cases. Apart from that, I have been involved in developing a Deep Neural Network component for fraud detection.
+    i18n: insiders_des
+  date:
+    detail: Present
+    i18n: insiders_date
+  job:
+    detail: Working Student
+    i18n: insiders_job
+  url:
+    desc: http://www.insiders-technologies.de/
+  icon: fa-book
+
+- name:
     detail: Deutsche Forschungszentrum für Künstliche Intelligenz GmbH (DFKI)
     i18n: dfki
   desc:

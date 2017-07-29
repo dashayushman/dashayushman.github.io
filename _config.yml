@@ -17,7 +17,7 @@ author:
   facebook_username: 'ayushmanmaku'
   github_username: 'dashayushman'
   head_img: 'static/img/landing/dash.jpg'
-  desc: 'I am machine learning engineer with experience in toolkits like scikit-learn, Tensorflow, Keras. I began my career as a full stack web developer and I still enjoy designing User Interfaces. Python, java, node.js, mongoDb and express are my preferred programming langiuages, frameworks and database engines and I have experience in MySQL and java too. I am an extremely fast learner, hard worker and a self-motivated independent developer. I believe that with hard work and sincerity anything can be achieved. I have an affinity towards Artificial Intelligence, Machine Learning, Deep Neural Networks, Information Retrieval, Data Mining and I aim at contributing as much as I can to these fields.'
+  desc: 'I am a fast learner, hard worker, and a self-motivated independent developer. I have an affinity towards Artificial Intelligence (specifically Machine Learning and Deep Learning) and I aim at contributing as much as I can to these fields. My research interests are Sequence Learning, Generative Adversarial Networks, Sequence to Sequence Models, Siamese Network, Natural Language Understanding using Deep Learning, and Handwriting Recognition in Air. Apart from my interests in AI I have a keen interest in Web Application development, Music Composition and Production.'
 
 # sections
 sections:
@@ -48,6 +48,13 @@ sections:
     name: 'Projects'
     tpl: 'projects.html'
     css: 'project'
+
+  - id: 'publications'
+    nav: 'publications'
+    i18n: 'nav.publictations'
+    name: 'Publications'
+    tpl: 'blog.html'
+    css: 'testimonials navy-section'
 
   - id: 'blog'
     nav: 'blog'

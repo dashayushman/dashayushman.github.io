@@ -1,3 +1,9 @@
+- name: 'TAC-GAN'
+  i18n: 'tacgan'
+  url: '/dashayushman/TAC-GAN'
+  img: 'static/img/landing/tac-gan.png'
+  desc: 'Text Conditioned Auxiliary Classifier Generative Adversarial Network, (TAC-GAN) is a text to image Generative Adversarial Network (GAN) for synthesizing images from their text descriptions. TAC-GAN builds upon the AC-GAN by conditioning the generated images on a text description instead of on a class label. In the presented TAC-GAN model, the input vector of the Generative network is built based on a noise vector and another vector containing an embedded representation of the textual description. While the Discriminator is similar to that of the AC-GAN, it is also augmented to receive the text information as input before performing its classification.'
+
 - name: 'Deep-Trans'
   i18n: 'deeptrans'
   url: '/dashayushman/deep-trans'
