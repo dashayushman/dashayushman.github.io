@@ -21,7 +21,13 @@ permalink: /
                 {% for section in site.sections %}
                     <li>
                       {% if section.id == section.nav %}
-                      <a class="page-scroll" href="/{{ section.id }}/" target="blank">
+                          {% if section.id == 'cv'%}
+                          <a class="page-scroll" href="https://docs.google.com/document/d/1D1Pu7lgD8lXAsPHIcyiN3q5Vg7f7o0zsFk15Xypt1ro/edit?usp=sharing" target="blank">
+                            
+                            {% else %}
+                            <a class="page-scroll" href="/{{ section.id }}/" target="blank"> 
+                            {% endif %}
+                        
                         
                         {% else %}
                         <a class="page-scroll" href="#{{ section.id }}">

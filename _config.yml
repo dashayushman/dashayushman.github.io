@@ -4,9 +4,10 @@
 title: "Dash"
 description: "Ayushman Dash's blog."
 keywords: "dash,blog,Jekyll,github,gh-pages,personal"
-baseurl: "https://dashayushman.github.io/"
-url: "https://dashayushman.github.io"
-#url: "http://127.0.0.1:4000"
+#baseurl: "https://dashayushman.github.io/"
+baseurl: "/"
+#url: "https://dashayushman.github.io"
+url: "http://127.0.0.1:4000"
 
 # author
 author:
@@ -62,6 +63,13 @@ sections:
     name: 'Blog'
     tpl: 'blog.html'
     css: 'testimonials navy-section'
+
+  - id: 'cv'
+    nav: 'cv'
+    i18n: 'nav.cv'
+    name: 'Curriculum Vitae'
+    tpl: 'blog.html'
+    css: 'contact'
 
   - id: 'links'
     nav: 'nav'
