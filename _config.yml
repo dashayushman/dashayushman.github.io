@@ -4,9 +4,9 @@
 title: "Dash"
 description: "Ayushman Dash's blog."
 keywords: "dash,blog,Jekyll,github,gh-pages,personal"
-baseurl: "/"
-#url: "http://github-username.github.io"
-url: "http://127.0.0.1:4000"
+baseurl: "http://dashayushman.github.io/"
+url: "http://dashayushman.github.io"
+#url: "http://127.0.0.1:4000"
 
 # author
 author:
