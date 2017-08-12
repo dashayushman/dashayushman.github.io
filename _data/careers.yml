@@ -1,4 +1,20 @@
 - name:
+    detail: Ovation MindGarage
+    i18n: mg
+  desc:
+    detail: I am also working with MindGarage, an independent lab under the guidance of Prof. Marcus Liwicki, which with a vision of 'open minded research' focuses on Machine Learning and Deeplearning research. I help them in the administration, organisation and helping students in their projects.
+    i18n: mg_des
+  date:
+    detail: Present
+    i18n: mg_date
+  job:
+    detail: Student Assistant
+    i18n: mg_job
+  url:
+    desc: http://mindgarage.ai
+  icon: fa-book
+
+- name:
     detail: Insiders Technologies GmbH
     i18n: insiders
   desc:
