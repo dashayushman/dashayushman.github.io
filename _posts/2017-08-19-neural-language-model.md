@@ -63,6 +63,7 @@ Install Spacy by following the instructions [here](https://spacy.io/docs/usage/)
 
 ```sh
 pip install -Iv spacy==1.9.0
+python -m spacy download en_core_web_sm
 ```
 
 ### **4.5 Others**
