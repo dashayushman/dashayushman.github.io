@@ -85,7 +85,7 @@ Open the notebook names **Neural Language Model** and you can start off.
 
 <br>
 # **6. Neural Language Model**
-We will start building our own Language model using an LSTM Network. To do so we will need a corpus. For the purpose of this tutorial, let us use a toy corpus, which is a text file called ```corpus.txt``` that 0I downloaded from Wikipedia. I will use this to demonstrate how to build your own Neural Language Model, and you can use the same knowledge to extend the model further for a more realistic scenario (I will give pointers to do so too).
+We will start building our own Language model using an LSTM Network. To do so we will need a corpus. For the purpose of this tutorial, let us use a toy corpus, which is a text file called ```corpus.txt``` that I downloaded from Wikipedia. I will use this to demonstrate how to build your own Neural Language Model, and you can use the same knowledge to extend the model further for a more realistic scenario (I will give pointers to do so too).
 
 ## **6.1 Loading The Corpus**
 In this section, you will load the ```corpus.txt``` and do minimal preprocessing.
