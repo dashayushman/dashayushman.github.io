@@ -25,7 +25,7 @@ If you want to quickly apply for the OSA-alpha, you can do it [here](https://goo
 # Where is it going to happen?
 This year OSA-alpha is going to take place in Berlin, Germany at the innovative Campus Saarbrücker Str. 36. Insiders Technologies is going to host all the participants of OSA-alpha and all our sessions will take place in the old backery.
 <br>
-![Collage](/uploads/74bdf6fa296aacb0b8a32ccb0eaacfc6/Collage.jpg)
+![Collage](https://mg-git.cs.uni-kl.de/mg-admin/OSA-alpha/uploads/74bdf6fa296aacb0b8a32ccb0eaacfc6/Collage.jpg)
 
 # What are we going to do at OSA-alpha?
 
