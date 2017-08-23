@@ -29,7 +29,7 @@ This year OSA-alpha is going to take place in Berlin, Germany at the innovative 
 
 <br>
 
-<img src="https://mg-git.cs.uni-kl.de/mg-admin/OSA-alpha/uploads/74bdf6fa296aacb0b8a32ccb0eaacfc6/Collage.jpg" alt="Collage Berlin" style="width: 1000px;">
+<img src="https://mg-git.cs.uni-kl.de/mg-admin/OSA-alpha//uploads/91b14ac8e89500056b10b7e42ca90bcf/Collage.jpg" alt="Collage Berlin" style="width: 1000px;">
 <br>
 <br>
 
