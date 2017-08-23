@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "A Tutorial on Neural Language Models"
+title:  "A Hands-on Tutorial on Neural Language Models"
 desc: "This is a hands-on tutorial on Neural Language Models"
-keywords: "LSTM, Neural Lamnguage Models, RNN, language-models"
+keywords: "LSTM, Neural Language Models, RNN, language-models"
 date: 19-08-2017
 categories: [tutorials]
 tags: [generative models, Language Models, LSTM]
@@ -10,13 +10,13 @@ icon: fa-file-text-o
 ---
 
 # **1. Introduction**
-If you are here that means you wish to cut the crap and understand how to train your own Neural Language Model. If you are a regular user of frameworks like Keras, Tflearn, etc., then you know how easy it has become these days to build, train and deploy Neural Network Models. If not then you will probably by the end of this post.
+If you are here that means you wish to cut the crap and understand how to train your own Neural Language Model. If you are a regular user of frameworks like Keras, Tflearn, etc., then you know how easy it has become these days to build, train and deploy Neural Network Models. If not then you will probably by the end of this post. Clone [this repository](https://github.com/dashayushman/neural-language-model) (refer to Section 5 for details) to get the Jupyter Notebook and run it on your computer.  
 
 <br>
 # **2. Prerequisite**
 1. [**Python**](https://www.tutorialspoint.com/python/): I will be using Python 3.5 for this tutorial
 
-2. [**LSTM**](http://colah.github.io/posts/2015-08-Understanding-LSTMs/): If you dont know what LSTMs are, then this is a must read.
+2. [**LSTM**](http://colah.github.io/posts/2015-08-Understanding-LSTMs/): If you don't know what LSTMs are, then this is a must read.
 
 3. [**Basics of Machine Learning**](https://www.youtube.com/watch?v=2uiulzZxmGg): If you want to dive into Machine Learning/Deep Learning, then I strongly recommend the first 4 lectures from [Stanford's CS231]() by Andrej Karpathy.
 
@@ -33,7 +33,7 @@ If you are here that means you wish to cut the crap and understand how to train 
 
 <br>
 # **4. Install Dependencies**
-We will install everythin in a virtual environment and I would suggest you to run this Jupyter Notebook in the same virtualenv. I have also provided a ```requirements.txt``` file with the [repository](https://github.com/dashayushman/neural-language-model) to make things easier.
+We will install everything in a virtual environment and I would suggest you run this Jupyter Notebook in the same virtualenv. I have also provided a ```requirements.txt``` file with the [repository](https://github.com/dashayushman/neural-language-model) to make things easier.
 
 ### **4.1 Virtual Environment**
 
@@ -85,10 +85,10 @@ Open the notebook names **Neural Language Model** and you can start off.
 
 <br>
 # **6. Neural Language Model**
-We will start building our own Language model using an LSTM Network. To do so we will need a corpus. For the purpose of this tutorial, let us use a toy corpus, which is a text file called ```corpus.txt``` that 0I downloaded from Wikipedia. I will use this to demponstrate how to build your own Neural Language Model, and you can use the same knowledge to extend the model further for a more realistic scenario (I will give pointers to do so too).
+We will start building our own Language model using an LSTM Network. To do so we will need a corpus. For the purpose of this tutorial, let us use a toy corpus, which is a text file called ```corpus.txt``` that 0I downloaded from Wikipedia. I will use this to demonstrate how to build your own Neural Language Model, and you can use the same knowledge to extend the model further for a more realistic scenario (I will give pointers to do so too).
 
 ## **6.1 Loading The Corpus**
-In this section you will load the ```corpus.txt``` and do minimal preprocessing.
+In this section, you will load the ```corpus.txt``` and do minimal preprocessing.
 
 
 ```python
@@ -110,13 +110,13 @@ print("\n".join(corpus[:5])) # Shows the first 5 lines of the corpus
     Some representations are loosely based on interpretation of information processing and communication patterns in a biological nervous system, such as neural coding that attempts to define a relationship between various stimuli and associated neuronal responses in the brain. Research attempts to create efficient systems to learn these representations from large-scale, unlabeled data sets.
     Deep learning architectures such as deep neural networks, deep belief networks and recurrent neural networks have been applied to fields including computer vision, speech recognition, natural language processing, audio recognition, social network filtering, machine translation and bioinformatics where they produced results comparable to and in some cases superior to human experts.
     Deep learning is a class of machine learning algorithms that:
-    use a cascade of many layers of nonlinear processing units for feature extraction and transformation. Each successive layer uses the output from the previous layer as input. The algorithms may be supervised or unsupervised and applications include pattern analysis and classification .
+    use a cascade of many layers of nonlinear processing units for feature extraction and transformation. Each successive layer uses the output from the previous layer as input. The algorithms may be supervised or unsupervised and applications include pattern analysis and classification.
 
 
-As you can see that this small piece of code loads the toy text corpus, extracts lines from it, ignores empty lines, and removes text in between brackets. Note that in reality you will not be able to load the entire corpus into memory. You will need to write a [generator](https://wiki.python.org/moin/Generators) to yield text lines from the corpus, or use some advanced features provided by the Deep Learning frameworks like [Tensorflow's Input Pipelines](https://www.tensorflow.org/programmers_guide/reading_data). 
+As you can see that this small piece of code loads the toy text corpus, extracts lines from it ignore empty lines and remove text in between brackets. Note that in reality, you will not be able to load the entire corpus into memory. You will need to write a [generator](https://wiki.python.org/moin/Generators) to yield text lines from the corpus, or use some advanced features provided by the Deep Learning frameworks like [Tensorflow's Input Pipelines](https://www.tensorflow.org/programmers_guide/reading_data). 
 
 ## **6.2 Tokenizing the Corpus**
-In this section we will see how to tokenize the text lines that we extracted and then create a **Vocabulary**.
+In this section, we will see how to tokenize the text lines that we extracted and then create a **Vocabulary**.
 
 
 ```python
@@ -161,17 +161,17 @@ print('Mean Sentence Length: {}\nSentence Length Standard Deviation: {}\n'
     Max Sentence Length: 65
 
 
-**Notice** that we did not lowercase the [Named Entities(NEs)](https://en.wikipedia.org/wiki/Named-entity_recognition). This is totally your choice. It part of a normalization step and I believe it is a good idea to let the model learn the Named Entities in the corpus. But do not blindly consider any library for NEs. I chose Spacy as it is very simple to use, fast and efficient. Note that I am using the [**en_core_web_sm**](https://spacy.io/docs/usage/models) model of Spacy, which is very small and good enough for this tutorial. You would probably want to choose your own NE recognizer.
+**Notice** that we did not lowercase the [Named Entities(NEs)](https://en.wikipedia.org/wiki/Named-entity_recognition). This is totally your choice. Its part of a normalization step and I believe it is a good idea to let the model learn the Named Entities in the corpus. But do not blindly consider any library for NEs. I chose Spacy as it is very simple to use, fast and efficient. Note that I am using the [**en_core_web_sm**](https://spacy.io/docs/usage/models) model of Spacy, which is very small and good enough for this tutorial. You would probably want to choose your own NE recognizer.
 
-Other Normalization steps include [stemming and lemmatization](https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html) which I will not implement because **(1)** I want my Language Model to learn the various forms of a word and their occurances by itself; **(2)** In a real world scenario you will train your Model with a huge corpus with Millions of text lines, and you can assume that the corpus covers the most commonly used terms in Language. Hence, no extra normalization is required. 
+Other Normalization steps include [stemming and lemmatization](https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html) which I will not implement because **(1)** I want my Language Model to learn the various forms of a word and their occurrences by itself; **(2)** In a real world scenario you will train your Model with a huge corpus with Millions of text lines, and you can assume that the corpus covers the most commonly used terms in Language. Hence, no extra normalization is required. 
 
 ### **6.2.1 SEQUENCE_BEGIN and SEQUENCE_END**
 Along with the naturally occurring terms in the corpus, we will add two new terms called the *SEQUENCE_BEGIN* and **SEQUENCE_END** term. These terms mark the beginning and end of a sentence. We do this because we want our model to learn word occurring at the beginning and at the end of sentences. Note that we are dependent on Spacy's Tokenization algorithm here. You are free to explore other tokenizers and use whichever you find is best.
 
 ## **6.3 Create a Vocabulary**
-After we have minimally preprocessed the corpus and extracted sequence of terms from it, we will create a vocabulary for our Language Model. This means that we will create two python dictionaries,
-1. **Word2Idx** : This dictionary has all the unique words(terms) as keys with a corresponding unique ID as values
-2. **Idx2Word** : This is the reverse of Word2Idx. It has the unique IDs as keys and their corresponding words(terms) as values
+After we have minimally preprocessed the corpus and extracted sequence of terms from it, we will create a vocabulary for our Language Model. This means that we will create two Python dictionaries,
+1. **Word2Idx**: This dictionary has all the unique words(terms) as keys with a corresponding unique ID as values
+2. **Idx2Word**: This is the reverse of Word2Idx. It has the unique IDs as keys and their corresponding words(terms) as values
 
 
 ```python
@@ -182,7 +182,7 @@ print(vocab)
     ['today', 'generative', 'stimuli', 'loosely', 'natural', 'at', 'level', 'opposed', 'experts', 'be', 'broader', 'comparable', 'propositional', 'also', 'language', 'wealth', 'such', 'responses', 'methods', 'continued', 'Colorado', 'correspond', 'leading', 'CAP', 'part', 'finance', 'valid', 'competed', 'in', 'or', 'composition', 'discoveries', 'recurrent', 'patterns', 'algorithms', 'biological', 'neural', 'some', 'networks', 'network', 'cascade', 'many', 'analysis', 'agree', 'Drinker', ':', 'theft', 'family', 'filtering', 'hidden', 'Othniel', 'massive', 'Bone', 'are', 'efficient', 'these', 'Cope', 'remain', 'America', 'may', 'depends', 'levels', ']', 'solved', 'system', 'sought', 'high', '-', 'divides', 'disgrace', 'once', 'assignment', 'excavation', 'that', 'Academy', 'dinosaurs', 'low', 'rich', 'descriptions', 'results', 'human', 'threshold', 'computer', 'previous', 'than', 'has', 'Deep', 'history', 'using', 'light', 'resorting', 'include', 'SEQUENCE_BEGIN', 'mainly', 'bones', 'applied', 'Belief', 'processing', 'no', 'dinosaur', 'define', 'prehistoric', 'destruction', 'been', 'recognition', 'Marsh', 'speech', 'attempts', 'coding', 'each', 'depth', 'derived', 'ruined', 'potentially', 'representations', 'Wars', 'superior', 'features.[8', 'abstraction', 'information', 'brain', 'researchers', 'used', 'but', 'describe', 'complicated', 'own', 'paleontologists', 'species', 'systems', 'hierarchy', 'shed', 'research', 'caps', 'class', 'form', 'translation', 'Museum', 'pattern', 'path', 'Edward', 'transformations', 'socially', 'The', 'other', 'create', 'features', 'lower', 'fossils', 'concepts', 'neuronal', 'deaths', 'life', 'influence', 'fields', 'layers', 'different', 'audio', 'scientific', 'procure', 'layer', 'is', 'algorithm', 'applications', 'Machines', 'plus', 'upon', 'latent', 'representation', 'connections', '1892', 'contributions', 'science', 'through', 'definitions', 'hunters', 'organized', 'shallow', 'transformation', 'data', 'partially', 'wise', 'number', 'feedforward', 'bone', 'variables', 'Philadelphia', 'age', 'they', 'to', 'nodes', 'belief', 'universally', 'including', 'by', 'wars', 'of', 'where', 'unsupervised', 'architectures', 'Networks', '/', 'fossil', 'American', ',', 'and', 'artificial', 'more', 'boxes', 'interest', 'propagate', 'follow', 'Yale', 'have', 'problem', 'efforts', 'Sciences', 'new', 'task', 'bribery', 'beds', 'associated', 'for', 'hierarchical', 'were', 'sparked', 'scale', 'cases', 'paleontology', 'the', 'Wyoming', 'interpretation', 'classification', 'multiple', 'an', 'higher', 'forming', 'agreed', 'surge', 'nervous', 'chain', 'Peabody', 'Charles', 'causal', '32', '.', 'deep', 'vision', 'services', 'unlimited', 'unlabeled', 'formulas.[9', 'bioinformatics', 'uses', 'successive', 'one', 'on', 'produced', 'cap', 'specific', 'rivalries', 'sets', 'as', 'financially', 'feature', 'large', 'a', 'most', 'from', 'during', 'History', 'based', 'underhanded', 'Nebraska', 'expeditions', 'with', 'relationship', 'Boltzmann', 'credit', 'communication', '–', 'found', 'North', 'learning', ';', 'led', 'SEQUENCE_END', 'between', 'after', 'models', 'machine', 'extraction', 'unopened', "'s", 'learn', 'input', 'decades', 'their', 'social', '1877', 'Natural', 'various', 'common', 'gilded', 'mutual', 'publications', 'public', 'can', 'supervised', 'field', 'use', 'output', 'nonlinear', 'signal', 'attacks', 'which', 'units']
 
 
-**Alternatively**, if your corpus is huge, you would probably want to iterate through it entirely and generate term frequencies. Once you have the term frequencies, it is better to select the most commonly occuring terms in the vocabulary (as it covers most of the Natural Language).
+**Alternatively**, if your corpus is huge, you would probably want to iterate through it entirely and generate term frequencies. Once you have the term frequencies, it is better to select the most commonly occurring terms in the vocabulary (as it covers most of the Natural Language).
 
 
 ```python
@@ -200,7 +200,7 @@ print(word_counter.most_common(100)) # just to show the top 100 terms
     [('of', 36), (',', 34), ('SEQUENCE_BEGIN', 28), ('SEQUENCE_END', 28), ('the', 25), ('.', 25), ('and', 23), ('to', 22), ('in', 18), ('learning', 16), ('a', 15), ('deep', 11), ('from', 8), ('representations', 7), ('layers', 7), ('that', 6), ('layer', 6), ('their', 6), ('neural', 6), ('-', 5), ('processing', 5), ('as', 5), ('on', 5), ('level', 4), ('or', 4), ('networks', 4), ('are', 4), ('levels', 4), ('depth', 4), ('data', 4), ('is', 4), ('they', 4), ('machine', 4), ('multiple', 4), ('supervised', 4), ('nonlinear', 4), ('be', 3), ('such', 3), ('algorithms', 3), ('Cope', 3), ('may', 3), ('include', 3), ('Marsh', 3), ('attempts', 3), ('network', 3), ('each', 3), ('but', 3), ('used', 3), ('many', 3), ('features', 3), ('unsupervised', 3), ('fossil', 3), ('have', 3), ('for', 3), ('were', 3), ('based', 3), ('–', 3), ('between', 3), ('input', 3), ('field', 3), ('output', 3), ('units', 3), ('broader', 2), ('methods', 2), ('part', 2), ('recurrent', 2), ('some', 2), ('hidden', 2), ('these', 2), (']', 2), ('Deep', 2), ('dinosaur', 2), ('been', 2), ('recognition', 2), ('potentially', 2), ('shallow', 2), ('hierarchy', 2), ('fossils', 2), ('caps', 2), ('form', 2), ('including', 2), ('sets', 2), ('feature', 2), ('bones', 2), ('led', 2), ('bone', 2), ('learn', 2), ('Natural', 2), ('which', 2), ('generative', 1), ('America', 1), ('stimuli', 1), ('boxes', 1), ('loosely', 1), ('natural', 1), ('leading', 1), ('at', 1), ('opposed', 1), ('experts', 1), ('comparable', 1)]
 
 
-This was we make sure to consider the ***top K*** (in this case 100) most commonly used terms in the Language (assuming that the corpus represents the Language or domain specific language. For e.g., medical corpora, e-commerce corpora, etc.). In Neural Machine Translation Models, usually a vocabulary size of 10,000 to 100,000 is used. But remember, it all depends on your task, corpus size, and the Language itself. 
+This way we make sure to consider the ***top K*** (in this case 100) most commonly used terms in the Language (assuming that the corpus represents the Language or domain specific language. For e.g., medical corpora, e-commerce corpora, etc.). In Neural Machine Translation Models, usually, a vocabulary size of 10,000 to 100,000 is used. But remember, it all depends on your task, corpus size, and the Language itself. 
 
 ### **6.3.1 UNKNOWN and PAD**
 
@@ -236,9 +236,9 @@ print(Word2Idx)
 
 ## **6.4 Preload Word Vectors**
 
-Since you are here, I am almost sure that you are familiar with or have atleast heard of [Word2Vec](https://radimrehurek.com/gensim/models/word2vec.html). Read about it if you don't know. 
+Since you are here, I am almost sure that you are familiar with or have at least heard of [Word2Vec](https://radimrehurek.com/gensim/models/word2vec.html). Read about it if you don't know. 
 
-Spacy provides a set of pretrained word vectors. We will make use of these to initialize our embedding layer (details in the following section). 
+Spacy provides a set of pre-trained word vectors. We will make use of these to initialize our embedding layer (details in the following section). 
 
 
 ```python
@@ -287,7 +287,7 @@ print('Train Size: {}\nValidation Size: {}'.format(len(train), len(validation)))
 
 ## **6.6 Prepare The Training Data**
 
-We will prepare the data by doing the following fro both train and Validation data:
+We will prepare the data by doing the following for both train and Validation data:
 
 1. Convert word sequences to id sequences (which will be later used in the embedding layer)
 
@@ -334,7 +334,7 @@ print(validation_id_seqs[-10:-1])
 
 ### **6.6.1 Generating the Targets from N-Grams**
 
-This might look a little tricky but it is not. Here we take the sequence of ids and generate n-grams. For the purpose of training, we need sequences of terms as the training examples and the next term in the sequence as the target. Not clear right? Let us look at an example. If our sequence of words were ```['hello', 'my', 'friend']```, then we extract extract n-grams, where n=2-3 (that means we split bigrams and trigrams from the sequence). So the sequence is split into ```['hello', 'my'], ['my', 'friend'] and ['hello', 'my', 'friend']```. Well to train our network this is not enough right? We need some objective/target that we can infer about. So to get a target we split the last term of the n-grams out. In the case of our example, the corresponding targets are ```['friend', 'my', 'friend']```. To show you the bigger picture, the input sequence ```['my', 'friend', 'friend']``` is split into n-grams and then split again to pop out a target term.
+This might look a little tricky but it is not. Here we take the sequence of ids and generate n-grams. For the purpose of training, we need sequences of terms as the training examples and the next term in the sequence as the target. Not clear right? Let us look at an example. If our sequence of words were ```['hello', 'my', 'friend']```, then we extract n-grams, where n=2-3 (that means we split bigrams and trigrams from the sequence). So the sequence is split into ```['hello', 'my'], ['my', 'friend'] and ['hello', 'my', 'friend']```. Well, to train our network this is not enough, right? We need some objective/target that we can infer about. So to get a target we split the last term of the n-grams out. In the case of our example, the corresponding targets are ```['friend', 'my', 'friend']```. To show you the bigger picture, the input sequence ```['my', 'friend', 'friend']``` is split into n-grams and then split again to pop out a target term.
 
 ```python
 bigram['hello', 'my'] --> input['hello'] --> target['my']
@@ -364,8 +364,8 @@ print('Shape X_TRAIN: {}\tShape Y_TRAIN: {}'.format(X_train.shape, Y_train.shape
 print('Shape X_TEST: {}\tShape Y_TEST: {}'.format(X_test.shape, Y_test.shape))
 ```
 
-    Shape X_TRAIN: (1815, 5)	Shape Y_TRAIN: (1815, 202)
-    Shape X_TEST: (447, 5)	Shape Y_TEST: (447, 202)
+    Shape X_TRAIN: (1815, 5)    Shape Y_TRAIN: (1815, 202)
+    Shape X_TEST: (447, 5)    Shape Y_TEST: (447, 202)
 
 
 ## **6.7 The Model**
@@ -410,10 +410,10 @@ model.fit(X_train, Y_train, validation_set=(X_test, Y_test), show_metric=True,
 
 
 # **7. Inference**
-The story does not get over after you train the model. We need to understand how to make inference using this trained model. Well honestly, this model is not even close to trained. We used just one article from Wikipedia to train this Language Model so we cannot expect it to be good. The idea was to realise the steps required actually build a Language Model from scratch. Now let us look at how to make an inference from the model that we just trained.
+The story does not get over after you train the model. We need to understand how to make inference using this trained model. Well honestly, this model is not even close to a good Language Model (one that represents the LangWe used just one article from Wikipedia to train this Language Model so we cannot expect it to be good. The idea was to realise the steps required actually build a Language Model from scratch. Now let us look at how to make an inference from the model that we just trained.
 
-## **7.1 Log Probability of a Sequence **
-Given a new sequence of terms, we would like to know the probability of the occurance of this sequence in the Language. We make use of our trained model (which we assume to be a represenattion of the Langauge) and calculate the n-gram probabilities and aggregate them to find a final probability score.
+## **7.1 Log Probability of a Sequence**
+Given a new sequence of terms, we would like to know the probability of the occurrence of this sequence in the Language. We make use of our trained model (which we assume to be a representation of the Langauge) and calculate the n-gram probabilities and aggregate them to find a final probability score.
 
 
 ```python
@@ -445,7 +445,7 @@ for in_string in in_strings:
     -2.92100688918
 
 
-To get the probability of the sequence, we take the n-grams of the sequence and we infer the probability of the next term to occur, take it's log and sum it with the log probabilities of all the other n-grams. The final score is the average over all. There can be other ways to look at it too. You can notmalize by n too, where n is the number of grans you considered. 
+To get the probability of the sequence, we take the n-grams of the sequence and we infer the probability of the next term to occur, take its log and sum it with the log probabilities of all the other n-grams. The final score is the average over all. There can be other ways to look at it too. You can normalize by n too, where n is the number of grams you considered. 
 
 # **7.2 Generating a Sequence**
 Since we trained this Language model to predict the next term given the previous 'n' terms, we can sample sequences out of this model too. We start with a random term and feed it to the Model. The Model predicts the next term and then we concat it with our previous term and feed it again to the Model. In this way we can generate arbitarily long sequences from the Model. Let us see how this naive model generates sequences,
