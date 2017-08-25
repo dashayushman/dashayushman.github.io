@@ -11,25 +11,42 @@ icon: fa-file-text-o
 
 # **What is Ovation Summer Academy alpha (OSA-alpha)?**
 
-The MindGarage and Insiders Technologies GmbH are working on Conversational Intelligence to make machines understand Natural Language as well as humans do. From Chat-Bots to core modules like Named Entity Recognition, Intent Classification, Visual Question Answering, Question Answering and Reasoning, etc., we deal with all these challenging problems in our everyday work. To give Conversational Intelligence a lateral perspective and to figure out fresh solutions for them, we are bringing together computer scientists from in and around Europe to what we call the **Ovation Summer Academy alpha** (OSA-alpha). The goal is to come up with innovative ideas to tackle the challenges in Conversational Intelligence, work as a team, program like there is no tomorrow, and build Jarvis by the end (or at least try to :-P). This is a pre announcement for the Ovation Summer Academy alpha. The official announcement will be made tomorrow on the [MindGarage](mindgarage.ai) homepage.
+The MindGarage and Insiders Technologies GmbH are working on Conversational Intelligence (CI) to make machines understand Natural Language as well as humans do. CI includes Chat-Bots to core modules like Named Entity Recognition, Intent Classification, Visual Question Answering, Question Answering and Reasoning, etc.. We deal with all these challenging tasks in our everyday work. To give Conversational Intelligence a lateral perspective and to figure out fresh solutions for them, we are bringing together computer scientists from all around Europe to what we call the **Ovation Summer Academy alpha** (OSA-alpha). The goal is to come up with innovative ideas to tackle the challenges in Conversational Intelligence, work as a team, program like there is no tomorrow, and build Jarvis by the end (or at least try to :-P). This is a pre announcement for the Ovation Summer Academy alpha. The official announcement will be made tomorrow on the <a href="mindgarage.ai" target="_blank">MindGarage</a> homepage.
 
-If you want to quickly apply for the OSA-alpha, you can do it [here](https://goo.gl/forms/2SUbIT4wm03RL8DC3).
+If you want to quickly apply for the OSA-alpha, you can do it <a href="https://goo.gl/forms/2SUbIT4wm03RL8DC3" target="_blank">here</a>.
 
 <br>
 # **TL;DR**
  
- * **What**: **Ovation Summer Academy alpha**
- * **When**: **18/09/2017** till **22/09/2017**
- * **Where**: **Berlin, Germany**
- * **Where to Register**: **[Here](https://goo.gl/forms/BsVrdeznWl8J2Stt1)** till **01/09/2017**
+ * ## **What**: Ovation Summer Academy alpha
+ * ## **When**: 18/09/2017 till 22/09/2017
+ * ## **Where**: Berlin, Germany
+ * ## **Where to Register**: **<a href="https://goo.gl/forms/2SUbIT4wm03RL8DC3" target="_blank">here</a>** till **01/09/2017**
+ * ## **Registration Fees**: **None**
+ * ## **Costs for the hotel, rooms, food, social events, and (some) drinks will be covered by Insiders Technologies**
 
 <br>
+
+# **Participation Requirements**
+
+<br>
+
+## **1. AI for Natural Language Processing**
+ Experience in AI for NLP is a minimum requirement for participating in the event.
+
+## **2. Deep Learning**
+ Experience in Deep Learning models for NLP is an added advantage. We will provide a generic framework for handelling datasets and boilerplate code for training Deep Learning models. These can be used out of the box and can be easily extended as well. Frameworks that we will support are Tensorflow, Keras, Tflearn, Spacy and NLTK.
+
+## **3. Knowledge about the Current Methods**
+ Knowledge about the current methods like Word2Vec, Attention Mechanism, Recurrent Neural Networks, etc. Knowledge about all of these methods is not a strict requirement but is a good-to-have.
+
+<br>
+
 # **Where is it going to happen?**
-This year OSA-alpha is going to take place in Berlin, Germany at the innovative Campus Saarbrücker Str. 36. Insiders Technologies is going to host all the participants of OSA-alpha and all our sessions will take place in the old backery.
-
+This year OSA-alpha is going to take place in Berlin, Germany at the innovative Campus (Saarbrücker Str. 36). Insiders Technologies is going to host all the participants of OSA-alpha and all our sessions will take place in the old backery.
 <br>
 
-<img src="https://mg-git.cs.uni-kl.de/mg-admin/OSA-alpha//uploads/91b14ac8e89500056b10b7e42ca90bcf/Collage.jpg" alt="Collage Berlin" style="width: 1000px;">
+<img src="https://mg-git.cs.uni-kl.de/mg-admin/OSA-alpha/uploads/91b14ac8e89500056b10b7e42ca90bcf/Collage.jpg" alt="Collage Berlin" style="width: 100%;">
 <br>
 <br>
 
@@ -65,7 +82,7 @@ Try to perform one-shot learning on a very small dataset to classify sentences.
 <br>
 
 ## **2. Entity Recognition (ER)**
-Once the machine has extracted the intent of a person's query, it will need to parse this and gather useful information from it. To do so, the machine needs to identify [Named Entities](https://en.wikipedia.org/wiki/Named-entity_recognition) from the queries. These Entities are used to reason with the query and generate an answer or select an answer from a given template. For example, if the query is "What is Germany?", then the machine needs to parse the query into "What is Germany **[Country]** ?" 
+Once the machine has extracted the intent of a person's query, it will need to parse this and gather useful information from it. To do so, the machine needs to identify <a href="https://en.wikipedia.org/wiki/Named-entity_recognition" target="_blank">Named Entities</a> from the queries. These Entities are used to reason with the query and generate an answer or select an answer from a given template. For example, if the query is "What is Germany?", then the machine needs to parse the query into "What is Germany **[Country]** ?" 
 
 This task has two subtasks, which are:
 
@@ -109,8 +126,72 @@ We say we perform _Coarse-Grained_ Sentiment Classification when there are only 
 <br>
 ### **4.2 Fine-Grained Sentiment Classification**
 On the other hand, the task of _Fine-Grained_ Sentiment Classification is generally related to classifying several types of emotion, such as anger, sadness, disgust or happiness.
+
 <br>
 
 # **How do I apply for the OSA-alpha?**
 
-Good that you asked! If you are interested in participating on the Ovation Summer Academy alpha, please fill in the application form [here](https://goo.gl/forms/2SUbIT4wm03RL8DC3). It will be open until September, 1st, 2017. The selected participants will be announced a few days later here in our blog. We are looking forward to see you in Berlin in September!
+Good that you asked! If you are interested in participating on the Ovation Summer Academy alpha, please fill in the application form <a href="https://goo.gl/forms/2SUbIT4wm03RL8DC3" target="_blank">here</a>. It will be open until September, 1st, 2017. The selected participants will be announced a few days later here in our blog. We are looking forward to see you in Berlin in September!
+
+<br>
+
+# **Organization Committee**
+<br>
+
+<table>
+<tr>
+    <th><img src="https://mg-git.cs.uni-kl.de/mg-admin/OSA-alpha/uploads/20d694dd8e4a0283fb087e3361077115/marcus.jpg" alt="Marcus Liwicki" style="width: 90%;margin-left:6px;">
+    </th>
+    <th><img src="https://mg-git.cs.uni-kl.de/mg-admin/OSA-alpha/uploads/97cd3ae286e5a2064c7f876cfabce461/john_new.jpeg" alt="John Gamboa" style="width: 90%;margin-left:6px;"></th>
+    <th><img src="https://mg-git.cs.uni-kl.de/mg-admin/OSA-alpha/uploads/56882ca535691b153f8a94fc934e1711/ayush.jpg" alt="Ayushman Dash" style="width: 90%;margin-left:6px;"></th>
+    <th><img src="https://mg-git.cs.uni-kl.de/mg-admin/OSA-alpha/uploads/b448fc1dcd74879b5aab3bf23ae9d488/shan_team.jpg" alt="Afzal" style="width: 90%;margin-left:6px;"></th>
+</tr>
+<tr>
+    <th style="text-align: center;width: 25%;">
+            <span style="font-size: 120%;"><a href="http://blog.mindgarage.de/liwicki/" target="_blank">Marcus Liwicki</a></span>
+            <br> <span style="font-size: 110%;">General Chair</span> 
+            <br> <span style="font-size: 100%;"><a href="http://mindgarage.ai/" target="_blank">MindGarage</a></span>
+            <br><span style="font-size: 100%;"><a href="http://www.insiders-technologies.de/" target="_blank">Insiders Technologies</a></span>
+    </th>
+    <th style="text-align: center;width: 25%;">
+            <span style="font-size: 120%;"><a href="https://vaulttech.github.io/" target="_blank">John Gamboa</a></span>
+            <br> <span style="font-size: 110%;">Co-Chair</span> 
+            <br> <span style="font-size: 100%;"><a href="http://mindgarage.ai/" target="_blank">MindGarage</a></span>
+            <br><span style="font-size: 100%;"><a href="http://www.insiders-technologies.de/" target="_blank">Insiders Technologies</a></span>
+    </th>
+    <th style="text-align: center;width: 25%;">
+            <span style="font-size: 120%;"><a href="https://dashayushman.github.io/" target="_blank">Ayushman Dash</a></span>
+            <br> <span style="font-size: 110%;">Co-Chair</span> 
+            <br> <span style="font-size: 100%;"><a href="http://mindgarage.ai/" target="_blank">MindGarage</a></span>
+            <br><span style="font-size: 100%;"><a href="http://www.insiders-technologies.de/" target="_blank">Insiders Technologies</a></span>
+    </th>
+    <th style="text-align: center;width: 25%;">
+            <span style="font-size: 120%;">Muhammad Zeshan Afzal</span>
+            <br> <span style="font-size: 110%;">Scientific Co-Chair</span> 
+            <br> <span style="font-size: 100%;"><a href="http://mindgarage.ai/" target="_blank">MindGarage</a></span>
+            <br><span style="font-size: 100%;"><a href="http://www.insiders-technologies.de/" target="_blank">Insiders Technologies</a></span>
+    </th>
+</tr>
+</table>
+
+
+<table style="width: 50%;margin-top:10px">
+<tr>
+    <th><img src="https://mg-git.cs.uni-kl.de/mg-admin/OSA-alpha//uploads/2e5db0d17c83437dce73df33972f824a/weiss_team.jpg" alt="Werner Weiss" style="width: 90%;margin-left:6px;"></th>
+    <th><img src="http://www.insiders-technologies.de/fileadmin/images/Presse/Presse_Bildmaterial/technologies_logo/rgb/insiders_technologies_rgb.png" alt="Insiders Technologies" style="width: 90%;margin-left:6px;">
+    </th>
+    
+</tr>
+<tr>
+    <th style="text-align: center;width: 25%;">
+            <span style="font-size: 120%;">Werner Weiss</span>
+            <br> <span style="font-size: 110%;">CEO</span> 
+            <br><span style="font-size: 100%;"><a href="http://www.insiders-technologies.de/" target="_blank">Insiders Technologies</a></span>
+    </th>
+    <th style="text-align: center;width: 25%;">
+            <span style="font-size: 120%;"><a href="http://www.insiders-technologies.de/" target="_blank">Insiders Technologies GmbH</a></span>
+            <br> <span style="font-size: 110%;">Sponsor</span>
+    </th>
+</tr>
+</table>
+
