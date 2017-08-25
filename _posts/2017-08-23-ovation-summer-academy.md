@@ -172,17 +172,16 @@ Good that you asked! If you are interested in participating on the Ovation Summe
             <br><span style="font-size: 100%;"><a href="http://www.insiders-technologies.de/" target="_blank">Insiders Technologies</a></span>
     </th>
 </tr>
-</table>
-
-
-<table style="width: 50%;margin-top:10px">
 <tr>
+    <th></th>
     <th><img src="https://mg-git.cs.uni-kl.de/mg-admin/OSA-alpha//uploads/2e5db0d17c83437dce73df33972f824a/weiss_team.jpg" alt="Werner Weiss" style="width: 90%;margin-left:6px;"></th>
     <th><img src="http://www.insiders-technologies.de/fileadmin/images/Presse/Presse_Bildmaterial/technologies_logo/rgb/insiders_technologies_rgb.png" alt="Insiders Technologies" style="width: 90%;margin-left:6px;">
+    <th></th>
     </th>
     
 </tr>
 <tr>
+    <th></th>
     <th style="text-align: center;width: 25%;">
             <span style="font-size: 120%;">Werner Weiss</span>
             <br> <span style="font-size: 110%;">CEO</span> 
@@ -192,6 +191,6 @@ Good that you asked! If you are interested in participating on the Ovation Summe
             <span style="font-size: 120%;"><a href="http://www.insiders-technologies.de/" target="_blank">Insiders Technologies GmbH</a></span>
             <br> <span style="font-size: 110%;">Sponsor</span>
     </th>
+    <th></th>
 </tr>
 </table>
-
