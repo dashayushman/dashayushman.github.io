@@ -9,7 +9,7 @@ tags: [handwriting recognition in air, deep learning, classifier fusion, GRU, CN
 icon: fa-file-text-o
 ---
 
-### **Status**: Accepted for [ICDAR2017](http://u-pat.org/ICDAR2017/)
+### **Status**: Accepted for an oral presentation [ICDAR2017](http://u-pat.org/ICDAR2017/)
 ### **Link to the Paper**: [https://arxiv.org/abs/1705.11181](https://arxiv.org/abs/1705.11181)
 <br>
 # **What is AirScript**
@@ -17,7 +17,7 @@ icon: fa-file-text-o
 [AirScript](https://arxiv.org/abs/1705.11181) is a novel approach for creating, recognizing and visualizing documents in air. We came up with a novel algorithm, called **2-DifViz**, that converts the hand movements in air (captured by a Myo-armband worn by a user) into a sequence of x, y coordinates on a 2D Cartesian plane, and visualizes them on a canvas. AirScript gives freedom of movement to the user, as well as provides a real-time visual feedback of the written characters, making the interaction natural. AirScript provides a recognition module to predict the content of the document created in air. This recognition modules is based on **deep learning**, which uses the sensor data and the visualizations created by 2-DifViz. The recognition module consists of a Convolutional Neural Network (CNN) and two Gated Recurrent Unit (GRU) Networks. The output from these three networks is fused to get the final prediction about the characters written in air. Well, if that did not make it clear then watch this video that demonstrates what AirScript is and what it does.
 
 <div class="text-center">
-    <iframe width="600" height="315" src="https://www.youtube.com/embed/olrJhrLXDAk" frameborder="0" allowfullscreen></iframe>    
+    <iframe width="60%" height="315" src="https://www.youtube.com/embed/olrJhrLXDAk" frameborder="0" allowfullscreen></iframe>    
 </div>
 <br>
 
@@ -35,7 +35,7 @@ I originally called it **2-D Differential Visualiser** but as you can see it was
 
 **2-DiffViz** takes the *pitch* and *yaw* (hand movements) from the MYO-Armband and converts the angular displacements into 2D coordinates. If you wish to understand the maths behind 2-DiffViz then please refer to the [Section IV-B of the paper](https://arxiv.org/abs/1705.11181). We create a sequence of such *(x, y)* coordinates at a sampling rate of 1000Hz. These coordinates are used further in both visualising and recognising the characters written in air.
 
-![Vision](https://chalelele.files.wordpress.com/2017/07/vision.png)
+<img src="https://chalelele.files.wordpress.com/2017/07/vision.png" alt="Vision" style="width: 100%;">
 
 #  **Realtime Visualisation**
 
@@ -45,7 +45,7 @@ We developed an app to visualise hand movements. It works as if there were an im
 
 To recognise the characters that the user is writing in air we use a fused classifier model. We used Deep Learning for developing all the recognition modules of AirScript. To make the recognition robust and cover all modality we used both spatial and temporal features from the hand movements to perform recognition. To capture the spatial features we convert the 2-DiffViz coordinate sequence into an image and train a Convolutional Neural Network to perform a classification task with digits as labels. To capture the temporal features we train two Gated Recussent Unit Networks. One was trained on the raw IMU signals and the other was trained on the 2-DiffViz coordinate sequence. The result of the three networks is fused using a very simple weighted average technique, in which the weights of the classifiers are their recognition rates. The following image shows the entire architecture of AirScript.
 
-![architecture](https://chalelele.files.wordpress.com/2017/07/architecture_diagram_new1.png)
+<img src="https://chalelele.files.wordpress.com/2017/07/architecture_diagram_new1.png" alt="Architecture" style="width: 100%;">
 
 # **Applications**
 
