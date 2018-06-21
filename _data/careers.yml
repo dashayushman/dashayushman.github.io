@@ -1,15 +1,15 @@
 - name:
     detail: Insiders Technologies GmbH, Berlin
-    i18n: insiders
+    i18n: insiders_1
   desc:
     detail: Currently, I am a member of the chatbot team at Insiders, and I am involved in developing their proprietary chatbot framework.
-    i18n: insiders_des
+    i18n: insiders_des_1
   date:
     detail: Present
-    i18n: insiders_date
+    i18n: insiders_date_1
   job:
     detail: Software Engineer - Natural Language Understanding
-    i18n: insiders_job
+    i18n: insiders_job_1
   url:
     desc: http://www.insiders-technologies.de/
   icon: fa-book
