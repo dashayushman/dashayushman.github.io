@@ -1,11 +1,27 @@
 - name:
+    detail: Insiders Technologies GmbH, Berlin
+    i18n: insiders
+  desc:
+    detail: Currently, I am a member of the chatbot team at Insiders, and I am involved in developing their proprietary chatbot framework.
+    i18n: insiders_des
+  date:
+    detail: Present
+    i18n: insiders_date
+  job:
+    detail: Software Engineer - Natural Language Understanding
+    i18n: insiders_job
+  url:
+    desc: http://www.insiders-technologies.de/
+  icon: fa-book
+
+- name:
     detail: Ovation MindGarage
     i18n: mg
   desc:
     detail: I am also working with MindGarage, an independent lab under the guidance of Prof. Marcus Liwicki, which with a vision of 'open minded research' focuses on Machine Learning and Deeplearning research. I help them in the administration, organisation and helping students in their projects.
     i18n: mg_des
   date:
-    detail: Present
+    detail: Aug 2017
     i18n: mg_date
   job:
     detail: Student Assistant
@@ -15,13 +31,13 @@
   icon: fa-book
 
 - name:
-    detail: Insiders Technologies GmbH
+    detail: Insiders Technologies GmbH, Kaiserslautern
     i18n: insiders
   desc:
     detail: I work in the Natural Language Understanding team and I am involved in developing a Deep Question Answering model for real-world business use cases. Apart from that, I have been involved in developing a Deep Neural Network component for fraud detection.
     i18n: insiders_des
   date:
-    detail: Present
+    detail: January 2017
     i18n: insiders_date
   job:
     detail: Working Student
@@ -37,7 +53,7 @@
     detail: Now I am Working in the Multimedia Analysis and Data Mining team at Deutsche Forschungszentrum für Künstliche Intelligenz GmbH (DFKI) in the Multimedia Opinion Mining project. I am modelling trending events/news and analyzing them for visualizing opinions and trends in the world.
     i18n: dfki_des
   date:
-    detail: Present
+    detail: August 2016 
     i18n: dfki_date
   job:
     detail: Research Assistant
