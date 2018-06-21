@@ -22,12 +22,6 @@
   img: 'static/img/landing/tlstm.png'
   desc: "LSTM.transpose() is an experiment with an unfolded version of LSTMs. The hypothesis is that The gradients of a deep Neural Network following the same architecture of the LSTM unfolded through time (even those of the bottom layers) are efficiently trainable with Backpropagation, and won't be affected by the 'vanishing gradient' problem. This is the case even when the weights are not 'tied'."
 
-- name: 'Voice (Under Development)'
-  i18n: 'voice'
-  url: '/sigvoiced/Voice'
-  img: 'static/img/landing/voice.png'
-  desc: With an idea of using state of the art embodied sensors to track hand gestures and classify signs in Indian Sign language and convert that to speech, I am developing this open-source project using MYO-armband, Deep LSTMs with Connectionist Temporal Classifiers. This project is meant to be a starting point for anyone who is interested in doing further research in the same field or topic.
-
 - name: 'Air-Script'
   i18n: 'Air-Script'
   url: '/dashayushman/air-script'
