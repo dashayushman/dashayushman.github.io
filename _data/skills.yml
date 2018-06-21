@@ -4,6 +4,12 @@
 - name: Tensorflow
   percentage: 80
 
+- name: Keras
+  percentage: 90
+
+- name: PyTorch
+  percentage: 75
+
 - name: Scikit-learn
   percentage: 90
 
