@@ -30,9 +30,13 @@
     "voice": "With an idea of using state of the art embodied sensors to track hand gestures and classify signs in Indian Sign language and convert that to speech, I am developing this open-source project using MYO-armband, Deep LSTMs with Connectionist Temporal Classifiers. This project is meant to be a starting point for anyone who is interested in doing further research in the same field or topic."
   },
   "career":{
+    "element_1": "Element AI, Montreal, Canada",
+    "element_des_1": "I bring state of the art Natural Language Processing research into products and custom solutions.",
+    "element_date_1": "February 2019 - Present",
+    "element_job_1": "Applied Research Scientist",
     "insiders_1": "Insiders Technologies GmbH, Berlin",
     "insiders_des_1": "Currently, I am a member of the chatbot team at Insiders, and I am involved in developing their proprietary chatbot framework.",
-    "insiders_date_1": "February 2018 - Present",
+    "insiders_date_1": "February 2018 - Oct 2018",
     "insiders_job_1": "Software Engineer - Natural Language Understanding",
     "my_career": "My Career",
     "mg": "Ovation MindGarage",
